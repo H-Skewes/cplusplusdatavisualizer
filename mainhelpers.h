@@ -5,5 +5,5 @@
 std::vector<std::vector<int>> buildmatrixprint();
 int menuprint();
 std::vector<std::vector<int>> printmatrix(std::vector<std::vector<int>> ranmatrix);
-
+bool checkaugmented();
 #endif // MAINHELPERS_H

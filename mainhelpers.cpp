@@ -24,7 +24,6 @@ int menuprint() {
 std::vector<std::vector<int>> buildmatrixprint(){
     int rows {};
 	int columns {};
-
     std::cout <<"Next lets build your matrix how many rows are there? ";
 	std::cin >> rows;
 	std::cout <<"Next lets build your matrix how many columns are there? ";
@@ -32,7 +31,22 @@ std::vector<std::vector<int>> buildmatrixprint(){
     std::cout<<""<<std::endl;
     std::vector<std::vector<int>> builtmatrix = buildmatrix(rows, columns);
     std::cout<<""<<std::endl;
+
     return builtmatrix;
+}
+
+bool checkaugmented(){
+    int checkinput;
+    bool augbool;
+    std::cout<<"Is the matrix augmented? 1. yes 2. no. Enter in the appropriate #";
+    std::cin >> checkinput;
+    if (checkinput == 1){
+        augbool = true;
+    }
+    else{
+        augbool = false;
+    }
+    return augbool;
 }
 
 std::vector<std::vector<int>> printmatrix(std::vector<std::vector<int>> ranmatrix){
