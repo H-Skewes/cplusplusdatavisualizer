@@ -20,7 +20,7 @@ int main(){
 		else if(selection == 1){
 			std::vector<std::vector<int>> entirematrix = buildmatrixprint();
 			std::vector<std::vector<int>> refmatrix = ref(entirematrix);
-			std::cout<<"Your new matrix-----------"<<std::endl;
+			std::cout<<"----Your new matrix-----"<<std::endl;
 			printmatrix(refmatrix);
 		}
 	}

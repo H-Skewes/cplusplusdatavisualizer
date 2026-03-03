@@ -32,14 +32,6 @@ std::vector<std::vector<int>> buildmatrixprint(){
     std::cout<<""<<std::endl;
     std::vector<std::vector<int>> builtmatrix = buildmatrix(rows, columns);
     std::cout<<""<<std::endl;
-
-    for (int rownum = 0; rownum < rows; rownum++){
-		for (int colnum =0; colnum < columns; colnum++){
-            int currvalue = builtmatrix[rownum][colnum];
-			std::cout<<" "<<currvalue<<" ";
-		}
-		std::cout<<std::endl;
-	}
     return builtmatrix;
 }
 

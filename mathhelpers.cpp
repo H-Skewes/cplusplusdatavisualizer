@@ -4,6 +4,7 @@
 std::vector<std::vector<int>> buildmatrix(int rows, int columns){
     std::vector<std::vector<int>> entirematrix(rows, std::vector<int>(columns, 0));
     std::cout<<"Enter values left to right --"<<std::endl;
+    // prints input for matrix and recieves input
     for (int rownum = 0; rownum < rows; rownum++){
 		for (int colnum =0; colnum < columns; colnum++){
 			int inputval;
@@ -16,7 +17,7 @@ std::vector<std::vector<int>> buildmatrix(int rows, int columns){
     return entirematrix;
 }
 
-std::vector<std::vector<int>> ref(std::vector<std::vector<int>> entirematrix){
+std::vector<std::vector<int>> rowreductionref(std::vector<std::vector<int>> entirematrix){
     std::vector<std::vector<int>> currmatrix = entirematrix;
 
     return currmatrix;
