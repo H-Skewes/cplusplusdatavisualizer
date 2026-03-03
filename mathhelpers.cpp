@@ -19,5 +19,7 @@ std::vector<std::vector<int>> buildmatrix(int rows, int columns){
 
 std::vector<std::vector<int>> rowreductionref(std::vector<std::vector<int>> entirematrix, bool augbool){
     std::vector<std::vector<int>> currmatrix = entirematrix;
+    size_t rowsize = currmatrix.size();
+    size_t colsize = currmatrix[0].size();
     return currmatrix;
 }

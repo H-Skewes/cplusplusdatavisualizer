@@ -38,7 +38,7 @@ std::vector<std::vector<int>> buildmatrixprint(){
 bool checkaugmented(){
     int checkinput;
     bool augbool;
-    std::cout<<"Is the matrix augmented? 1. yes 2. no. Enter in the appropriate #";
+    std::cout<<"Is the matrix augmented? 1. yes 2. no. Enter in the appropriate #: ";
     std::cin >> checkinput;
     if (checkinput == 1){
         augbool = true;

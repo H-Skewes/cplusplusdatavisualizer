@@ -15,4 +15,7 @@ $(TARGET): $(OBJECTS)
 clean:
 	rm -f $(OBJECTS) $(TARGET)
 
-.PHONY: all clean
+test: run_tests
+	@./run_tests
+	
+.PHONY: all clean test

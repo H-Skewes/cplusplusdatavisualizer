@@ -19,7 +19,9 @@ int main(){
 		}
 		else if(selection == 1){
 			std::vector<std::vector<int>> entirematrix = buildmatrixprint();
+			std::cout<<"-----Your original matrix-----"<<std::endl;
 			printmatrix(entirematrix);
+			std::cout<<""<<std::endl;
 			bool augbool = checkaugmented();
 			std::cout<<"----Your new matrix-----"<<std::endl;
 			std::vector<std::vector<int>> refmatrix = rowreductionref(entirematrix, augbool);
